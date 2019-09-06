@@ -14,7 +14,7 @@ h1{
 }
 
 .form-registrar{
-    width: 95;
+    width: 95%;
     max-width: 500px;
     margin: auto;
     background: white;
@@ -41,7 +41,7 @@ h1{
     justify-content: space-between;
 }
 
-inputs{
+input{
     margin-bottom: 15px;
     padding: 15px;
     font-size: 16px;
