@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>formulario de registro</title>
+    <link rel="Stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Formulario de registro </h1>
+    <form action="registrar.php" method="POST" class="form-registrar">
+        <h2 class="form-titulo">Crea una cuenta</h2>
+        <div class="contenedor-inputs">
+            <input id="idnombre" type="text" name="nombre"
+            placeholder="Nombre" class="input-48">
+            <input id="idapellido" type="text" name="apellido"
+            placeholder="Apellido" class="input-48">
+            <input id="idcorrreo" type="email" name="correo"
+            placeholder="Correo" class="input-100">
+            <input id="usuario" type="text" name="usuario"
+            placeholder="Usuario" class="input-48">
+            <input id="idpass" type="password" name="clave"
+            placeholder="Contraseña" class="input-48">
+            <input id="idtelefono" type="text" name="telefono"
+            placeholder="Telefono" class="input-100">
+            <input id="btnreg" type="submit" value="Registrar" class="btn-enviar">
+            <p>ya tienees una cuenta?<a class="form__link" href="#">Ingresa aqui</a></p>
+
+
+        </div>
+    </form>
+
+    <script>
+         //funcion de registro
+    function Mostrardatos(){
+      let Nombre = document.getElementById("idnombre").value;
+      let Apellido = document.getElementById("idapellido").value;
+      let correo = document.getElementById("idcorreo").value;
+      let Usuario = document.getElementById("usuario").value;
+      let Password = document.getElementById("idpass").value;
+      let Telefono = document.getElementById("idtelefono").value;
+    
+      alert(Nombre + "\n" + Apellido + "\n" + correo + "\n" + Usuario + "\n" +Password +"\n"+ Telefono );
+        
+    }   
+    let Botton = document.getElementById("idbtnreg");
+    Botton.onclick=()=>Mostrardatos;
+    </script>
+</body>
+</html>
